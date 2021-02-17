@@ -1,0 +1,120 @@
+main {
+  background-color: $white;
+  width: calc(100% - 3rem);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+.costs {
+  p {
+    color: $grayish-blue;
+    text-transform: uppercase;
+    &:last-child {
+      text-transform: lowercase;
+      margin-top: 1.5rem;
+    }
+  }
+}
+
+.slidecontainer {
+  width: 100%; /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none; /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 25px; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: 0.2s; /* 0.2 seconds transition on hover */
+  transition: opacity 0.2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #4caf50; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #4caf50; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+  p {
+    color: $grayish-blue;
+  }
+}
+
+.click {
+  width: 3.5rem;
+  height: 1.75rem;
+  margin: 0 0.5rem;
+  border: none;
+  background-color: $light-grayish-blue;
+  border-radius: 1rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: $white;
+    width: 1.25rem;
+    height: 1.25rem;
+    left: 0.25rem;
+    border-radius: 100%;
+  }
+  &:hover {
+    background-color: $strong-cyan;
+    cursor: pointer;
+  }
+}
+
+hr {
+  width: calc(100% + 4rem);
+  margin: 2.5rem -2rem;
+  border: 1px solid $light-grayish-blue;
+}
+
+.list {
+  ul {
+    list-style-image: url("/images/icon-check.svg");
+    list-style-position: inside;
+    li {
+      padding-top: 0.5rem;
+      color: $grayish-blue;
+    }
+  }
+}
+
+.btn {
+  background-color: $dark-desaturated-blue;
+  color: $pale-blue;
+  border: none;
+  padding: 0.75rem 3rem;
+  border-radius: 2rem;
+  margin-top: 2rem;
+  font-weight: $font-600;
+}

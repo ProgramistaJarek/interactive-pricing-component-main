@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Manrope", sans-serif;
+}
+
+html,
+body {
+  height: 100vh;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/images/bg-pattern.svg");
+  background-repeat: no-repeat;
+  background-position: top left;
+  font-size: 15px;
+}
+
+header {
+  margin: 2rem;
+  padding: 2rem 0;
+  text-align: center;
+  background-image: url("/images/pattern-circles.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+header h1 {
+  font-size: 1.25rem;
+}
+header p {
+  margin-top: 1.5rem;
+  line-height: 1.5rem;
+  color: #858fad;
+}
+
+main {
+  background-color: white;
+  width: calc(100% - 3rem);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+.costs p {
+  color: #858fad;
+  text-transform: uppercase;
+}
+.costs p:last-child {
+  text-transform: lowercase;
+  margin-top: 1.5rem;
+}
+
+.slidecontainer {
+  width: 100%;
+  /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;
+  /* Override default CSS styles */
+  appearance: none;
+  width: 100%;
+  /* Full-width */
+  height: 25px;
+  /* Specified height */
+  background: #d3d3d3;
+  /* Grey background */
+  outline: none;
+  /* Remove outline */
+  opacity: 0.7;
+  /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: 0.2s;
+  /* 0.2 seconds transition on hover */
+  transition: opacity 0.2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1;
+  /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  /* Override default look */
+  appearance: none;
+  width: 25px;
+  /* Set a specific slider handle width */
+  height: 25px;
+  /* Slider handle height */
+  background: #4caf50;
+  /* Green background */
+  cursor: pointer;
+  /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  /* Set a specific slider handle width */
+  height: 25px;
+  /* Slider handle height */
+  background: #4caf50;
+  /* Green background */
+  cursor: pointer;
+  /* Cursor on hover */
+}
+
+.price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+.price p {
+  color: #858fad;
+}
+
+.click {
+  width: 3.5rem;
+  height: 1.75rem;
+  margin: 0 0.5rem;
+  border: none;
+  background-color: #eaeefb;
+  border-radius: 1rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.click::before {
+  content: "";
+  position: absolute;
+  background-color: white;
+  width: 1.25rem;
+  height: 1.25rem;
+  left: 0.25rem;
+  border-radius: 100%;
+}
+.click:hover {
+  background-color: #10d5c2;
+  cursor: pointer;
+}
+
+hr {
+  width: calc(100% + 4rem);
+  margin: 2.5rem -2rem;
+  border: 1px solid #eaeefb;
+}
+
+.list ul {
+  list-style-image: url("/images/icon-check.svg");
+  list-style-position: inside;
+}
+.list ul li {
+  padding-top: 0.5rem;
+  color: #858fad;
+}
+
+.btn {
+  background-color: #293356;
+  color: #bdccff;
+  border: none;
+  padding: 0.75rem 3rem;
+  border-radius: 2rem;
+  margin-top: 2rem;
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=style.css.map */
