@@ -29,15 +29,15 @@
 
     <main>
       <div class="costs">
-        <p>Pageviews</p>
+        <p><span id="value"></span> Pageviews</p>
         <div class="slidecontainer">
-          <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+          <input type="range" min="1" max="5" value="3" step="1" class="slider" id="myRange">
         </div> 
-        <p>$ /month</p>
+        <p><span id="cost">$</span> / month</p>
       </div>
 
       <section class="price">
-        <p>Monthly Billing</p><button class="click" type="button"></button>
+        <p>Monthly Billing</p><button id="btn" class="click" type="button"> <div class="dot"></div> </button>
         <p>Yearly Billing <span><!--25% discount--></span></p>
       </section>
       <hr>
@@ -58,5 +58,6 @@
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
       <a href="#">Your Name Here</a>.
     </div>
+    <script src="/script/script.js"></script>
   </body>
 </html>
