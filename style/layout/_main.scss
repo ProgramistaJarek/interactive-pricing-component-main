@@ -20,7 +20,7 @@ main {
   }
 }
 
-#cost{
+#cost {
   color: $dark-desaturated-blue;
   font-size: 2.5rem;
   font-weight: $font-800;
@@ -98,9 +98,23 @@ input[type="range"] {
   justify-content: center;
   align-items: center;
   margin-top: 1.5rem;
+  width: 100%;
   p {
     color: $grayish-blue;
+    span {
+      background-color: hsla(15, 100%, 70%, 0.2);
+      padding: 0.2rem 0.5rem;
+      border-radius: 1rem;
+      margin-left: 0.5rem;
+      color: $light-red;
+    }
   }
+}
+.short-text {
+  display: inline-block;
+}
+.full-text {
+  display: none;
 }
 
 .click {
@@ -160,5 +174,69 @@ hr {
   &:hover {
     color: $white;
     cursor: pointer;
+  }
+}
+
+@media (min-width: 768px) {
+  main {
+    max-width: calc(768px - 2rem);
+    margin: 0 2rem;
+  }
+
+  .costs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    p {
+      letter-spacing: 0.15rem;
+      color: $grayish-blue;
+      text-transform: uppercase;
+      &:last-child {
+        margin-top: 0;
+      }
+    }
+  }
+
+  input[type="range"] {
+    position: absolute;
+    margin: 2.5rem 0 0;
+    width: 100%;
+    left: 0;
+  }
+
+  .price {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 5.5rem;
+    p {
+      color: $grayish-blue;
+      span {
+        background-color: hsla(15, 100%, 70%, 0.2);
+        padding: 0.2rem 0.5rem;
+        border-radius: 1rem;
+        margin-left: 0.5rem;
+        color: $light-red;
+      }
+    }
+  }
+  .short-text {
+    display: none;
+  }
+  .full-text {
+    display: inline-block;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .list {
+    text-align: left;
+  }
+  .btn {
+    padding: 1rem 5rem;
   }
 }

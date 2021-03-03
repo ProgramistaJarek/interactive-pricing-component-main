@@ -4,6 +4,9 @@ document.addEventListener("DOMContentLoaded", function () {
   range.oninput = () => {
     setValue();
   };
+  btn.onclick = () => {
+    setValue();
+  };
 });
 
 let range = document.querySelector("#myRange");
@@ -23,7 +26,9 @@ function setValue() {
   switch (range.value) {
     case "1":
       value.innerHTML = "10K";
-      dot.classList.contains("dot-active") ? (cost.innerHTML = "$" + (8 * (discount / 100)).toFixed(2)) : (cost.innerHTML = "$" + (8).toFixed(2));
+      dot.classList.contains("dot-active")
+        ? (cost.innerHTML = "$" + (8 * (discount / 100)).toFixed(2))
+        : (cost.innerHTML = "$" + (8).toFixed(2));
       break;
     case "2":
       value.innerHTML = "50K";
