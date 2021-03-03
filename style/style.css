@@ -36,6 +36,11 @@ body {
   font-size: 15px;
 }
 
+@media (min-width: 1440px) {
+  body {
+    background-size: contain;
+  }
+}
 header {
   margin: 2rem;
   padding: 2rem 0;

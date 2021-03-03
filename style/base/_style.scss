@@ -23,3 +23,9 @@ body {
   background-position: top left;
   font-size: $font-size;
 }
+
+@media (min-width: 1440px) {
+  body {
+    background-size: contain;
+  }
+}
